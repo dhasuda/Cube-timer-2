@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C40E62FC2023EE4A00BF0D1F /* PerformanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40E62FB2023EE4A00BF0D1F /* PerformanceViewModel.swift */; };
+		C4236E2820201CE8006B81E1 /* Performance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4236E2720201CE8006B81E1 /* Performance.storyboard */; };
+		C4236E2E202022D6006B81E1 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4236E2D202022D6006B81E1 /* PerformanceViewController.swift */; };
+		C4280AFC201EB47700DC3086 /* Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4280AFB201EB47700DC3086 /* Navigate.swift */; };
+		C46D02C0201D6097005A6A5A /* TimeSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D02BF201D6097005A6A5A /* TimeSerializer.swift */; };
+		C476A710201962BB002B31AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476A70F201962BB002B31AC /* AppDelegate.swift */; };
+		C476A717201962BB002B31AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C476A716201962BB002B31AC /* Assets.xcassets */; };
+		C476A71A201962BB002B31AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C476A718201962BB002B31AC /* LaunchScreen.storyboard */; };
+		C476A72820196347002B31AC /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C476A72720196347002B31AC /* Timer.storyboard */; };
+		C476A72C201964C4002B31AC /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476A72B201964C4002B31AC /* StyleGuide.swift */; };
+		C476A72E201967D6002B31AC /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476A72D201967D6002B31AC /* TimerViewController.swift */; };
+		C476A73020196854002B31AC /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476A72F20196854002B31AC /* Time.swift */; };
+		C476A73220196A9D002B31AC /* TimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476A73120196A9D002B31AC /* TimeViewModel.swift */; };
+		C476A73420196E34002B31AC /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476A73320196E34002B31AC /* StateMachine.swift */; };
+		C476A73720197590002B31AC /* TimeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476A73620197590002B31AC /* TimeDAO.swift */; };
+		C476A73A2019828C002B31AC /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476A7392019828C002B31AC /* UIFont.swift */; };
+		C47D4BC7203C5709009A13F7 /* PuzzleCellSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D4BC6203C5709009A13F7 /* PuzzleCellSetting.swift */; };
+		C47D4BCA203C5F91009A13F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47D4BC9203C5F91009A13F7 /* QuartzCore.framework */; };
+		C47D4BCC203C75AE009A13F7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D4BCB203C75AE009A13F7 /* UIColor.swift */; };
+		C4988A7E203B2C6D00E7D652 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4988A7D203B2C6D00E7D652 /* UIButton.swift */; };
+		C4988A80203B537500E7D652 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4988A7F203B537500E7D652 /* UIView.swift */; };
+		C4988A82203B8E3D00E7D652 /* SelectPuzzle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4988A81203B8E3D00E7D652 /* SelectPuzzle.storyboard */; };
+		C4988A84203B8E8C00E7D652 /* SelectPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4988A83203B8E8C00E7D652 /* SelectPuzzleViewController.swift */; };
+		C4988A86203BA1CB00E7D652 /* SelectPuzzleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4988A85203BA1CB00E7D652 /* SelectPuzzleViewModel.swift */; };
+		C4A282A9203BBF7C0013E751 /* PuzzleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A282A8203BBF7C0013E751 /* PuzzleSection.swift */; };
+		C4A282AB203BBFCB0013E751 /* SelectPuzzleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A282AA203BBFCB0013E751 /* SelectPuzzleCollectionCell.swift */; };
+		C4A282AD203BC17A0013E751 /* SelectPuzzleCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A282AC203BC17A0013E751 /* SelectPuzzleCollectionCell.xib */; };
+		C4B742B02021496400D12FEF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B742AF2021496400D12FEF /* UIViewController.swift */; };
+		C4F0B69C204250BF0022FA7B /* PerformanceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F0B69B204250BF0022FA7B /* PerformanceSection.swift */; };
+		C4F0B69E204251010022FA7B /* PerformanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F0B69D204251010022FA7B /* PerformanceCell.swift */; };
+		C4F0B6A0204251750022FA7B /* PerformanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F0B69F204251750022FA7B /* PerformanceCell.xib */; };
+		C4F0B6A2204257770022FA7B /* PerformanceSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F0B6A1204257770022FA7B /* PerformanceSectionHeader.swift */; };
+		C4F0B6A6204258510022FA7B /* PerfomanceSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F0B6A5204258510022FA7B /* PerfomanceSectionHeader.xib */; };
+		C4FCFEA2203BCCC1002BA9E4 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCFEA1203BCCC1002BA9E4 /* Puzzle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C40E62FB2023EE4A00BF0D1F /* PerformanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewModel.swift; sourceTree = "<group>"; };
+		C4236E2720201CE8006B81E1 /* Performance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Performance.storyboard; sourceTree = "<group>"; };
+		C4236E2D202022D6006B81E1 /* PerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
+		C4280AFB201EB47700DC3086 /* Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate.swift; sourceTree = "<group>"; };
+		C46D02BF201D6097005A6A5A /* TimeSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSerializer.swift; sourceTree = "<group>"; };
+		C476A70C201962BB002B31AC /* Cube Timer 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cube Timer 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C476A70F201962BB002B31AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C476A716201962BB002B31AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C476A719201962BB002B31AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C476A71B201962BB002B31AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C476A72720196347002B31AC /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		C476A72B201964C4002B31AC /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		C476A72D201967D6002B31AC /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		C476A72F20196854002B31AC /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		C476A73120196A9D002B31AC /* TimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewModel.swift; sourceTree = "<group>"; };
+		C476A73320196E34002B31AC /* StateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		C476A73620197590002B31AC /* TimeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDAO.swift; sourceTree = "<group>"; };
+		C476A7392019828C002B31AC /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		C47D4BC6203C5709009A13F7 /* PuzzleCellSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCellSetting.swift; sourceTree = "<group>"; };
+		C47D4BC9203C5F91009A13F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C47D4BCB203C75AE009A13F7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C4988A7D203B2C6D00E7D652 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		C4988A7F203B537500E7D652 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		C4988A81203B8E3D00E7D652 /* SelectPuzzle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectPuzzle.storyboard; sourceTree = "<group>"; };
+		C4988A83203B8E8C00E7D652 /* SelectPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPuzzleViewController.swift; sourceTree = "<group>"; };
+		C4988A85203BA1CB00E7D652 /* SelectPuzzleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPuzzleViewModel.swift; sourceTree = "<group>"; };
+		C4A282A8203BBF7C0013E751 /* PuzzleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleSection.swift; sourceTree = "<group>"; };
+		C4A282AA203BBFCB0013E751 /* SelectPuzzleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPuzzleCollectionCell.swift; sourceTree = "<group>"; };
+		C4A282AC203BC17A0013E751 /* SelectPuzzleCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPuzzleCollectionCell.xib; sourceTree = "<group>"; };
+		C4B742AF2021496400D12FEF /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C4F0B69B204250BF0022FA7B /* PerformanceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceSection.swift; sourceTree = "<group>"; };
+		C4F0B69D204251010022FA7B /* PerformanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceCell.swift; sourceTree = "<group>"; };
+		C4F0B69F204251750022FA7B /* PerformanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerformanceCell.xib; sourceTree = "<group>"; };
+		C4F0B6A1204257770022FA7B /* PerformanceSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceSectionHeader.swift; sourceTree = "<group>"; };
+		C4F0B6A5204258510022FA7B /* PerfomanceSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfomanceSectionHeader.xib; sourceTree = "<group>"; };
+		C4FCFEA1203BCCC1002BA9E4 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C476A709201962BB002B31AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47D4BCA203C5F91009A13F7 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C448FF5A20266E5900CC4735 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				C4A282AC203BC17A0013E751 /* SelectPuzzleCollectionCell.xib */,
+				C4F0B69F204251750022FA7B /* PerformanceCell.xib */,
+				C4F0B6A5204258510022FA7B /* PerfomanceSectionHeader.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		C46D02BE201D6068005A6A5A /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				C46D02BF201D6097005A6A5A /* TimeSerializer.swift */,
+			);
+			path = Serializer;
+			sourceTree = "<group>";
+		};
+		C476A703201962BA002B31AC = {
+			isa = PBXGroup;
+			children = (
+				C476A70E201962BB002B31AC /* Cube Timer 2 */,
+				C476A70D201962BB002B31AC /* Products */,
+				C47D4BC8203C5F90009A13F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C476A70D201962BB002B31AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C476A70C201962BB002B31AC /* Cube Timer 2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C476A70E201962BB002B31AC /* Cube Timer 2 */ = {
+			isa = PBXGroup;
+			children = (
+				C476A73820198274002B31AC /* Extensions */,
+				C476A729201964A5002B31AC /* Classes */,
+				C476A722201962E2002B31AC /* Models */,
+				C476A73520197568002B31AC /* DataBase */,
+				C46D02BE201D6068005A6A5A /* Serializer */,
+				C476A72620196315002B31AC /* ViewModels */,
+				C476A72520196306002B31AC /* ViewControllers */,
+				C476A723201962EB002B31AC /* Views */,
+				C476A721201962C4002B31AC /* Supporting files */,
+			);
+			path = "Cube Timer 2";
+			sourceTree = "<group>";
+		};
+		C476A721201962C4002B31AC /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C476A716201962BB002B31AC /* Assets.xcassets */,
+				C476A71B201962BB002B31AC /* Info.plist */,
+				C476A70F201962BB002B31AC /* AppDelegate.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		C476A722201962E2002B31AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C476A72F20196854002B31AC /* Time.swift */,
+				C476A73320196E34002B31AC /* StateMachine.swift */,
+				C4FCFEA1203BCCC1002BA9E4 /* Puzzle.swift */,
+				C47D4BC6203C5709009A13F7 /* PuzzleCellSetting.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C476A723201962EB002B31AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C448FF5A20266E5900CC4735 /* Xibs */,
+				C476A724201962FC002B31AC /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C476A724201962FC002B31AC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C476A72720196347002B31AC /* Timer.storyboard */,
+				C4988A81203B8E3D00E7D652 /* SelectPuzzle.storyboard */,
+				C476A718201962BB002B31AC /* LaunchScreen.storyboard */,
+				C4236E2720201CE8006B81E1 /* Performance.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C476A72520196306002B31AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C476A72D201967D6002B31AC /* TimerViewController.swift */,
+				C4988A83203B8E8C00E7D652 /* SelectPuzzleViewController.swift */,
+				C4236E2D202022D6006B81E1 /* PerformanceViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C476A72620196315002B31AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C476A73120196A9D002B31AC /* TimeViewModel.swift */,
+				C40E62FB2023EE4A00BF0D1F /* PerformanceViewModel.swift */,
+				C4988A85203BA1CB00E7D652 /* SelectPuzzleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C476A729201964A5002B31AC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C4F0B69A2042509B0022FA7B /* UITableView Related */,
+				C4A282A7203BBF670013E751 /* CollectionView Related */,
+				C476A72A201964B4002B31AC /* Utils */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C476A72A201964B4002B31AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C476A72B201964C4002B31AC /* StyleGuide.swift */,
+				C4280AFB201EB47700DC3086 /* Navigate.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C476A73520197568002B31AC /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				C476A73620197590002B31AC /* TimeDAO.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		C476A73820198274002B31AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C476A7392019828C002B31AC /* UIFont.swift */,
+				C4B742AF2021496400D12FEF /* UIViewController.swift */,
+				C4988A7D203B2C6D00E7D652 /* UIButton.swift */,
+				C4988A7F203B537500E7D652 /* UIView.swift */,
+				C47D4BCB203C75AE009A13F7 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C47D4BC8203C5F90009A13F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C47D4BC9203C5F91009A13F7 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4A282A7203BBF670013E751 /* CollectionView Related */ = {
+			isa = PBXGroup;
+			children = (
+				C4A282A8203BBF7C0013E751 /* PuzzleSection.swift */,
+				C4A282AA203BBFCB0013E751 /* SelectPuzzleCollectionCell.swift */,
+			);
+			path = "CollectionView Related";
+			sourceTree = "<group>";
+		};
+		C4F0B69A2042509B0022FA7B /* UITableView Related */ = {
+			isa = PBXGroup;
+			children = (
+				C4F0B69B204250BF0022FA7B /* PerformanceSection.swift */,
+				C4F0B69D204251010022FA7B /* PerformanceCell.swift */,
+				C4F0B6A1204257770022FA7B /* PerformanceSectionHeader.swift */,
+			);
+			path = "UITableView Related";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C476A70B201962BB002B31AC /* Cube Timer 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C476A71E201962BB002B31AC /* Build configuration list for PBXNativeTarget "Cube Timer 2" */;
+			buildPhases = (
+				C476A708201962BB002B31AC /* Sources */,
+				C476A709201962BB002B31AC /* Frameworks */,
+				C476A70A201962BB002B31AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cube Timer 2";
+			productName = "Cube Timer 2";
+			productReference = C476A70C201962BB002B31AC /* Cube Timer 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C476A704201962BA002B31AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Davi Grossi Hasuda";
+				TargetAttributes = {
+					C476A70B201962BB002B31AC = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C476A707201962BA002B31AC /* Build configuration list for PBXProject "Cube Timer 2" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C476A703201962BA002B31AC;
+			productRefGroup = C476A70D201962BB002B31AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C476A70B201962BB002B31AC /* Cube Timer 2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C476A70A201962BB002B31AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C476A71A201962BB002B31AC /* LaunchScreen.storyboard in Resources */,
+				C4A282AD203BC17A0013E751 /* SelectPuzzleCollectionCell.xib in Resources */,
+				C4F0B6A6204258510022FA7B /* PerfomanceSectionHeader.xib in Resources */,
+				C476A72820196347002B31AC /* Timer.storyboard in Resources */,
+				C476A717201962BB002B31AC /* Assets.xcassets in Resources */,
+				C4988A82203B8E3D00E7D652 /* SelectPuzzle.storyboard in Resources */,
+				C4F0B6A0204251750022FA7B /* PerformanceCell.xib in Resources */,
+				C4236E2820201CE8006B81E1 /* Performance.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C476A708201962BB002B31AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4988A7E203B2C6D00E7D652 /* UIButton.swift in Sources */,
+				C476A73020196854002B31AC /* Time.swift in Sources */,
+				C4236E2E202022D6006B81E1 /* PerformanceViewController.swift in Sources */,
+				C4988A86203BA1CB00E7D652 /* SelectPuzzleViewModel.swift in Sources */,
+				C476A73420196E34002B31AC /* StateMachine.swift in Sources */,
+				C4FCFEA2203BCCC1002BA9E4 /* Puzzle.swift in Sources */,
+				C4988A84203B8E8C00E7D652 /* SelectPuzzleViewController.swift in Sources */,
+				C4F0B69C204250BF0022FA7B /* PerformanceSection.swift in Sources */,
+				C40E62FC2023EE4A00BF0D1F /* PerformanceViewModel.swift in Sources */,
+				C46D02C0201D6097005A6A5A /* TimeSerializer.swift in Sources */,
+				C4F0B6A2204257770022FA7B /* PerformanceSectionHeader.swift in Sources */,
+				C47D4BC7203C5709009A13F7 /* PuzzleCellSetting.swift in Sources */,
+				C476A73220196A9D002B31AC /* TimeViewModel.swift in Sources */,
+				C476A72C201964C4002B31AC /* StyleGuide.swift in Sources */,
+				C4A282A9203BBF7C0013E751 /* PuzzleSection.swift in Sources */,
+				C476A73A2019828C002B31AC /* UIFont.swift in Sources */,
+				C4A282AB203BBFCB0013E751 /* SelectPuzzleCollectionCell.swift in Sources */,
+				C4280AFC201EB47700DC3086 /* Navigate.swift in Sources */,
+				C476A72E201967D6002B31AC /* TimerViewController.swift in Sources */,
+				C4F0B69E204251010022FA7B /* PerformanceCell.swift in Sources */,
+				C47D4BCC203C75AE009A13F7 /* UIColor.swift in Sources */,
+				C476A73720197590002B31AC /* TimeDAO.swift in Sources */,
+				C4B742B02021496400D12FEF /* UIViewController.swift in Sources */,
+				C476A710201962BB002B31AC /* AppDelegate.swift in Sources */,
+				C4988A80203B537500E7D652 /* UIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C476A718201962BB002B31AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C476A719201962BB002B31AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C476A71C201962BB002B31AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C476A71D201962BB002B31AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C476A71F201962BB002B31AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZXC553F2N;
+				INFOPLIST_FILE = "$(SRCROOT)/Cube Timer 2/Supporting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Davi-Grossi-Hasuda.Cube-Timer-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C476A720201962BB002B31AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZXC553F2N;
+				INFOPLIST_FILE = "$(SRCROOT)/Cube Timer 2/Supporting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Davi-Grossi-Hasuda.Cube-Timer-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C476A707201962BA002B31AC /* Build configuration list for PBXProject "Cube Timer 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C476A71C201962BB002B31AC /* Debug */,
+				C476A71D201962BB002B31AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C476A71E201962BB002B31AC /* Build configuration list for PBXNativeTarget "Cube Timer 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C476A71F201962BB002B31AC /* Debug */,
+				C476A720201962BB002B31AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C476A704201962BA002B31AC /* Project object */;
+}

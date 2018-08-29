@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DTo-9u-ViW">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timer View Controller-->
+        <scene sceneID="8ng-kq-ZjR">
+            <objects>
+                <viewController storyboardIdentifier="TimerViewController" title="TimerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DTo-9u-ViW" userLabel="Timer View Controller" customClass="TimerViewController" customModule="Cube_Timer_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sqg-CE-FRn">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpX-dc-sJG" userLabel="Time Label">
+                                <rect key="frame" x="205.5" y="338" width="256" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="ka3-TM-LL9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdR-mD-WSq">
+                                <rect key="frame" x="292" y="74" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="TM5-oy-cwZ"/>
+                                    <constraint firstAttribute="height" constant="83" id="a0Q-lt-FW0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="restartButton"/>
+                                <connections>
+                                    <action selector="tapResetButton" destination="DTo-9u-ViW" eventType="touchDown" id="aHp-M2-tZP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vz5-y0-hjv">
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vz5-y0-hjv" secondAttribute="height" multiplier="1:1" constant="1" id="4n4-Gl-ruk"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="230" id="cii-su-dEx"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="230" id="e9Z-iR-u0l"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Hand Pad"/>
+                                <connections>
+                                    <action selector="touchDownButtonWithSender:" destination="DTo-9u-ViW" eventType="touchDown" id="kP5-AE-Rsc"/>
+                                    <action selector="touchUpDownLeftPad" destination="DTo-9u-ViW" eventType="touchUpInside" id="Ld9-DK-iHr"/>
+                                    <action selector="touchUpInsideLeftPad" destination="DTo-9u-ViW" eventType="touchDown" id="jgg-Xa-acl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQq-NX-KUo">
+                                <rect key="frame" x="437" y="0.0" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="230" id="2ih-Yo-rbf"/>
+                                    <constraint firstAttribute="width" secondItem="zQq-NX-KUo" secondAttribute="height" multiplier="1:1" id="5z3-zG-q2H"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="230" id="DAU-Wv-GfR"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Hand Pad"/>
+                                <connections>
+                                    <action selector="touchDownButtonWithSender:" destination="DTo-9u-ViW" eventType="touchDown" id="Zhy-oe-Hxc"/>
+                                    <action selector="touchUpDownRightPad" destination="DTo-9u-ViW" eventType="touchUpInside" id="xce-Tk-Dvy"/>
+                                    <action selector="touchUpInsideRightPad" destination="DTo-9u-ViW" eventType="touchDown" id="fJw-6S-xBc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cq-SR-xLI">
+                                <rect key="frame" x="608" y="334" width="43" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="FWN-Nj-fiQ"/>
+                                    <constraint firstAttribute="width" constant="43" id="tKk-2L-cIx"/>
+                                </constraints>
+                                <state key="normal" image="statisticsButton"/>
+                                <connections>
+                                    <action selector="tapPerformanceButton" destination="DTo-9u-ViW" eventType="touchUpInside" id="z2A-5K-0rC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gou-8i-FM0">
+                                <rect key="frame" x="16" y="334" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="Xf0-Wa-61x"/>
+                                    <constraint firstAttribute="height" constant="25" id="iSw-Gs-7Gq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="changeButton"/>
+                                <connections>
+                                    <action selector="changePuzzle" destination="DTo-9u-ViW" eventType="touchUpInside" id="fcp-Lh-qfB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-Xh-5a2">
+                                <rect key="frame" x="49" y="336" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kt-1O-qGo" userLabel="Scramble Label">
+                                <rect key="frame" x="16" y="301.5" width="635" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IpX-dc-sJG" firstAttribute="top" secondItem="0kt-1O-qGo" secondAttribute="bottom" constant="388.5" id="0ON-of-YBi">
+                                <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                            </constraint>
+                            <constraint firstItem="fiz-6E-NLn" firstAttribute="trailing" secondItem="2cq-SR-xLI" secondAttribute="trailing" constant="16" id="19L-K1-jQb">
+                                <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                            </constraint>
+                            <constraint firstItem="fiz-6E-NLn" firstAttribute="bottom" secondItem="2cq-SR-xLI" secondAttribute="bottom" constant="16" id="8rQ-pA-pVA">
+                                <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                            </constraint>
+                            <constraint firstItem="zQq-NX-KUo" firstAttribute="top" secondItem="fiz-6E-NLn" secondAttribute="top" id="D8E-Lh-P9f"/>
+                            <constraint firstItem="IpX-dc-sJG" firstAttribute="top" secondItem="0kt-1O-qGo" secondAttribute="bottom" priority="750" constant="16" id="DCE-gc-Oi5"/>
+                            <constraint firstItem="vz5-y0-hjv" firstAttribute="top" secondItem="fiz-6E-NLn" secondAttribute="top" id="DfQ-A3-UQS"/>
+                            <constraint firstItem="biQ-Xh-5a2" firstAttribute="centerY" secondItem="Gou-8i-FM0" secondAttribute="centerY" id="GvB-6J-da9"/>
+                            <constraint firstItem="0kt-1O-qGo" firstAttribute="leading" secondItem="fiz-6E-NLn" secondAttribute="leading" constant="16" id="KHm-bl-g6r"/>
+                            <constraint firstItem="IpX-dc-sJG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0kt-1O-qGo" secondAttribute="bottom" constant="8" id="L1J-GV-TGB"/>
+                            <constraint firstItem="Gou-8i-FM0" firstAttribute="leading" secondItem="fiz-6E-NLn" secondAttribute="leading" constant="16" id="LdV-8q-awV">
+                                <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                            </constraint>
+                            <constraint firstItem="cdR-mD-WSq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vz5-y0-hjv" secondAttribute="trailing" constant="32" id="Rop-GX-hlR"/>
+                            <constraint firstItem="fiz-6E-NLn" firstAttribute="bottom" secondItem="Gou-8i-FM0" secondAttribute="bottom" constant="16" id="X2y-sL-kjN">
+                                <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                            </constraint>
+                            <constraint firstItem="biQ-Xh-5a2" firstAttribute="leading" secondItem="Gou-8i-FM0" secondAttribute="trailing" constant="8" id="b3t-88-9vY">
+                                <variation key="heightClass=regular-widthClass=regular" constant="26"/>
+                            </constraint>
+                            <constraint firstItem="cdR-mD-WSq" firstAttribute="centerY" secondItem="zQq-NX-KUo" secondAttribute="centerY" id="d7V-ah-S0V"/>
+                            <constraint firstItem="IpX-dc-sJG" firstAttribute="centerX" secondItem="fiz-6E-NLn" secondAttribute="centerX" id="lbk-w8-FPi"/>
+                            <constraint firstItem="vz5-y0-hjv" firstAttribute="leading" secondItem="fiz-6E-NLn" secondAttribute="leading" id="rWE-t4-CTG"/>
+                            <constraint firstItem="0kt-1O-qGo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vz5-y0-hjv" secondAttribute="bottom" constant="8" id="t8Q-zR-0ks">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="zQq-NX-KUo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cdR-mD-WSq" secondAttribute="trailing" constant="32" id="tJT-sP-aMZ"/>
+                            <constraint firstItem="fiz-6E-NLn" firstAttribute="trailing" secondItem="0kt-1O-qGo" secondAttribute="trailing" constant="16" id="vTh-wC-YHm"/>
+                            <constraint firstItem="cdR-mD-WSq" firstAttribute="centerX" secondItem="fiz-6E-NLn" secondAttribute="centerX" id="w7R-t9-gF4"/>
+                            <constraint firstItem="fiz-6E-NLn" firstAttribute="trailing" secondItem="zQq-NX-KUo" secondAttribute="trailing" id="xre-SN-Oxd"/>
+                            <constraint firstItem="fiz-6E-NLn" firstAttribute="bottom" secondItem="IpX-dc-sJG" secondAttribute="bottom" constant="16" id="zQD-YY-n4d">
+                                <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fiz-6E-NLn"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0ON-of-YBi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="0ON-of-YBi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="changePuzzleButton" destination="Gou-8i-FM0" id="uT5-Jg-78a"/>
+                        <outlet property="leftPad" destination="vz5-y0-hjv" id="FwJ-aq-Zu3"/>
+                        <outlet property="performanceButton" destination="2cq-SR-xLI" id="PEa-fF-09e"/>
+                        <outlet property="puzzleNameLabel" destination="biQ-Xh-5a2" id="wlV-hD-CkF"/>
+                        <outlet property="restartButton" destination="cdR-mD-WSq" id="wu4-OA-SAx"/>
+                        <outlet property="rightPad" destination="zQq-NX-KUo" id="ynA-7i-N7K"/>
+                        <outlet property="scrambleLabel" destination="0kt-1O-qGo" id="ttC-vh-caS"/>
+                        <outlet property="timeLabel" destination="IpX-dc-sJG" id="WDL-jD-2EJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBZ-MI-D2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22.938530734632685" y="20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hand Pad" width="230" height="230"/>
+        <image name="changeButton" width="25" height="25"/>
+        <image name="restartButton" width="83" height="83"/>
+        <image name="statisticsButton" width="43" height="25"/>
+    </resources>
+</document>

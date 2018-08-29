@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PerformanceCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="146" id="TpR-Wi-CLd" customClass="PerformanceCell" customModule="Cube_Timer_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TpR-Wi-CLd" id="nD1-5z-ydU">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee8-4Y-1Wp">
+                        <rect key="frame" x="16" y="8" width="343" height="108.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDQ-BN-M8a">
+                        <rect key="frame" x="16" y="116.5" width="343" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bDQ-BN-M8a" firstAttribute="leading" secondItem="nD1-5z-ydU" secondAttribute="leading" constant="16" id="6Vi-xs-8r0"/>
+                    <constraint firstAttribute="trailing" secondItem="bDQ-BN-M8a" secondAttribute="trailing" constant="16" id="FYK-wW-g6Z"/>
+                    <constraint firstItem="bDQ-BN-M8a" firstAttribute="top" secondItem="ee8-4Y-1Wp" secondAttribute="bottom" id="N8y-mH-WSV"/>
+                    <constraint firstItem="ee8-4Y-1Wp" firstAttribute="leading" secondItem="nD1-5z-ydU" secondAttribute="leading" constant="16" id="TLu-RN-7F9"/>
+                    <constraint firstAttribute="bottom" secondItem="bDQ-BN-M8a" secondAttribute="bottom" constant="8" id="lLI-kn-fme"/>
+                    <constraint firstAttribute="trailing" secondItem="ee8-4Y-1Wp" secondAttribute="trailing" constant="16" id="m4t-Uy-RLU"/>
+                    <constraint firstItem="ee8-4Y-1Wp" firstAttribute="top" secondItem="nD1-5z-ydU" secondAttribute="top" constant="8" id="zef-wk-umc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="scrambleSequenceLabel" destination="bDQ-BN-M8a" id="eYD-kW-7PV"/>
+                <outlet property="timeLabel" destination="ee8-4Y-1Wp" id="LUf-Dc-P8l"/>
+            </connections>
+            <point key="canvasLocation" x="-259.5" y="50"/>
+        </tableViewCell>
+    </objects>
+</document>

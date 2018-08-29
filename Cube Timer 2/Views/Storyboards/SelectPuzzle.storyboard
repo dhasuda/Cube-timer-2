@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Puzzle View Controller-->
+        <scene sceneID="bfe-wO-FSd">
+            <objects>
+                <viewController storyboardIdentifier="SelectPuzzle" useStoryboardIdentifierAsRestorationIdentifier="YES" id="egJ-n5-YOJ" customClass="SelectPuzzleViewController" customModule="Cube_Timer_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Olz-2M-0JW">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4lE-6E-mcn">
+                                <rect key="frame" x="32" y="0.0" width="603" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gus-gQ-FrN">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HBq-5x-Eds">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ipx-Ew-VzO" firstAttribute="trailing" secondItem="4lE-6E-mcn" secondAttribute="trailing" constant="32" id="AQM-hJ-NBQ"/>
+                            <constraint firstItem="4lE-6E-mcn" firstAttribute="leading" secondItem="Ipx-Ew-VzO" secondAttribute="leading" constant="32" id="OQ0-og-XfY"/>
+                            <constraint firstItem="4lE-6E-mcn" firstAttribute="top" secondItem="Ipx-Ew-VzO" secondAttribute="top" id="Y5f-vQ-Lob"/>
+                            <constraint firstItem="Ipx-Ew-VzO" firstAttribute="bottom" secondItem="4lE-6E-mcn" secondAttribute="bottom" id="c2L-vl-jni"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ipx-Ew-VzO"/>
+                    </view>
+                    <connections>
+                        <outlet property="puzzlesCollection" destination="4lE-6E-mcn" id="ZDn-lR-vQL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDd-Z6-duA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="-35"/>
+        </scene>
+    </scenes>
+</document>
